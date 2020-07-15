@@ -1,0 +1,45 @@
+/* section with features of the company */
+
+.features {
+	padding-top: 94px;
+	padding-bottom: 94px;
+	display: flex;
+}
+
+.features .item {
+	margin-right: 30px;
+	width: calc((100% - 90px) / 4);
+}
+
+.features .item:last-child {
+	margin-right: 0;
+}
+
+.icon-features {
+	padding: 25px 100px;
+	margin-bottom: 30px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #f5f4fa;
+	border-radius: 4px;
+}
+
+.section-title {
+	margin-bottom: 10px;
+
+	font-family: Roboto;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+}
+.section-text {
+	margin-top: 0px;
+	margin-bottom: 0px;
+
+	color: $additional-color;
+	font-size: 14px;
+	line-height: 1.71;
+}
