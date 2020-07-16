@@ -16,7 +16,7 @@ html {
 body {
 	padding-top: 79px;
 
-	background-color: #ffffff;
+	background-color: $accent-color;
 	color: $primary-text-color;
 	font-family: Roboto, sans-serif;
 	letter-spacing: 0.03em;
@@ -53,9 +53,10 @@ h3 {
 
 .footer {
 	background-color: #2f303a;
-}
-.footer-list {
-	display: flex;
-	align-items: baseline;
-	justify-content: space-between;
+
+	&-list {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+	}
 }

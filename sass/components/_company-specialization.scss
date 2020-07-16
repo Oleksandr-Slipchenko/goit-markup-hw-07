@@ -2,6 +2,30 @@
 .specialization {
 	padding-bottom: 94px;
 	display: flex;
+
+	&-title {
+		margin-bottom: 50px;
+
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 1.16;
+		text-align: center;
+	}
+	&-text {
+		position: absolute;
+		bottom: 0px;
+
+		padding: 27px 0px;
+		width: 100%;
+
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 1.14;
+		text-align: center;
+		text-transform: uppercase;
+		background-color: rgba(47, 48, 58, 0.8);
+		color: $accent-color;
+	}
 }
 
 .specialization .item {
@@ -12,32 +36,8 @@
 
 	display: block;
 	justify-content: center;
-}
 
-.specialization .item:last-child {
-	margin-right: 0;
-}
-
-.specialization-title {
-	margin-bottom: 50px;
-
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.16;
-	text-align: center;
-}
-.specialization-text {
-	position: absolute;
-	bottom: 0px;
-
-	padding: 27px 0px;
-	width: 100%;
-
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 1.14;
-	text-align: center;
-	text-transform: uppercase;
-	background-color: rgba(47, 48, 58, 0.8);
-	color: $accent-color;
+	&:last-child {
+		margin-right: 0;
+	}
 }

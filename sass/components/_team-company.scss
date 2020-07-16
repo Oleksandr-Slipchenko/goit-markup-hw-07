@@ -5,14 +5,25 @@
 	padding-bottom: 94px;
 
 	background-color: #f5f4fa;
-}
-.our-team {
-	margin-bottom: 50px;
 
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.16;
-	text-align: center;
+	& .title {
+		margin-bottom: 50px;
+
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 1.16;
+		text-align: center;
+	}
+	& .person {
+		padding-top: 0px;
+		margin-top: 0px;
+		margin-bottom: 10px;
+
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.18;
+		text-align: center;
+	}
 }
 
 .team {
@@ -26,9 +37,10 @@
 	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 	border-radius: 0px 0px 4px 4px;
 	overflow: hidden;
-}
-.team .item:last-child {
-	margin-right: 0;
+
+	&:last-child {
+		margin-right: 0;
+	}
 }
 
 .block-person {
@@ -40,16 +52,6 @@
 	background: $accent-color;
 }
 
-.section-team .person {
-	padding-top: 0px;
-	margin-top: 0px;
-	margin-bottom: 10px;
-
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.18;
-	text-align: center;
-}
 .section-profession {
 	margin-top: 0px;
 	margin-bottom: 16px;
@@ -66,9 +68,10 @@
 .social-list .social-item {
 	margin-right: 10px;
 	width: calc((100% - 30px) / 4);
-}
-.social-list .social-item:last-child {
-	margin-right: 0px;
+
+	&:last-child {
+		margin-right: 0px;
+	}
 }
 
 .social-item .link {
@@ -82,11 +85,11 @@
 
 	fill: $color-social-link;
 	transition: background-color 250ms $timing-transition, fill 250ms $timing-transition;
-}
 
-.social-item .link:hover,
-.social-item .link:focus {
-	background-color: $text-color-hover;
-	fill: $accent-color;
-	border-radius: 50%;
+	&:hover,
+	&:focus {
+		background-color: $text-color-hover;
+		fill: $accent-color;
+		border-radius: 50%;
+	}
 }

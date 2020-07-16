@@ -10,9 +10,10 @@
 
 	display: flex;
 	justify-content: center;
-}
-.filter .item:not(:last-child) {
-	margin-right: 8px;
+
+	& .item:not(:last-child) {
+		margin-right: 8px;
+	}
 }
 
 .button-filter {
@@ -27,35 +28,62 @@
 	cursor: pointer;
 
 	transition: color 250ms $timing-transition, background 250ms $timing-transition, box-shadow 250ms $timing-transition;
-}
-.button-filter:hover,
-.button-filter:focus {
-	background-color: $text-color-hover;
-	color: $accent-color;
-	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
+
+	&:hover,
+	&:focus {
+		background-color: $text-color-hover;
+		color: $accent-color;
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
+	}
 }
 
-.cards-list {
+.card {
 	display: flex;
 	flex-wrap: wrap;
+
+	&-content {
+		padding-top: 20px;
+		padding-right: 24px;
+		padding-bottom: 20px;
+		padding-left: 24px;
+
+		background: $accent-color;
+		border: 1px solid #eeeeee;
+		border-top: none;
+		box-sizing: border-box;
+	}
+	&-heading {
+		margin-bottom: 4px;
+
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 2;
+		letter-spacing: 0.06em;
+	}
+	&-caption {
+		margin-top: 0px;
+		font-size: 16px;
+
+		line-height: 1.87;
+		color: $additional-color;
+	}
 }
-.cards-list .item {
+.card .item {
 	margin-right: 30px;
 	margin-bottom: 30px;
 
 	width: calc((100% - 60px) / 3);
 	box-sizing: border-box;
+
+	&:nth-child(3n) {
+		margin-right: 0px;
+	}
+	&:nth-last-child(-n + 3) {
+		margin-bottom: 0px;
+	}
 }
 
-.cards-list .item:nth-child(3n) {
-	margin-right: 0px;
-}
-
-.cards-list .item:nth-last-child(-n + 3) {
-	margin-bottom: 0px;
-}
-
-.cards-list .link {
+.card .link {
 	width: 370px;
 	height: 404px;
 
@@ -64,11 +92,13 @@
 	color: $primary-text-color;
 
 	transition: box-shadow 250ms $timing-transition;
+
+	&:hover,
+	&:focus {
+		box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+	}
 }
-.cards-list .link:hover,
-.cards-list .link:focus {
-	box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
-}
+
 .overlay {
 	position: relative;
 
@@ -90,38 +120,10 @@
 	background: rgba(33, 150, 243, 0.9);
 	opacity: 0;
 	transition: transform 250ms $timing-transition;
-}
 
-.cards-list .link:hover .card-overlay,
-.cards-list .link:focus .card-overlay {
-	opacity: 1;
-	transform: translateY(0%);
-}
-
-.card-content {
-	padding-top: 20px;
-	padding-right: 24px;
-	padding-bottom: 20px;
-	padding-left: 24px;
-
-	background: $accent-color;
-	border: 1px solid #eeeeee;
-	border-top: none;
-	box-sizing: border-box;
-}
-
-.card-heading {
-	margin-bottom: 4px;
-
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 2;
-	letter-spacing: 0.06em;
-}
-.card-caption {
-	margin-top: 0px;
-	font-size: 16px;
-
-	line-height: 1.87;
-	color: $additional-color;
+	.card .link:hover &,
+	.card .link:focus & {
+		opacity: 1;
+		transform: translateY(0%);
+	}
 }
