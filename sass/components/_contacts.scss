@@ -1,6 +1,7 @@
 /* contacts */
 
 .contacts {
+	@extend %list;
 	display: flex;
 	margin-left: auto;
 

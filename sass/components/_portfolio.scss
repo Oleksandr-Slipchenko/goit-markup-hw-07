@@ -6,11 +6,10 @@
 }
 
 .filter {
-	margin-bottom: 50px;
-
+	@extend %list;
 	display: flex;
 	justify-content: center;
-
+	margin-bottom: 50px;
 	& .item:not(:last-child) {
 		margin-right: 8px;
 	}
@@ -38,8 +37,13 @@
 }
 
 .card {
+	@extend %list;
 	display: flex;
 	flex-wrap: wrap;
+
+	& img {
+		@extend %image;
+	}
 
 	&-content {
 		padding-top: 20px;

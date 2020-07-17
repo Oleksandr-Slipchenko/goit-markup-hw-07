@@ -6,6 +6,10 @@
 
 	background-color: #f5f4fa;
 
+	& img {
+		@extend %image;
+	}
+
 	& .title {
 		margin-bottom: 50px;
 
@@ -27,6 +31,7 @@
 }
 
 .team {
+	@extend %list;
 	display: flex;
 }
 
@@ -63,6 +68,7 @@
 }
 
 .social-list {
+	@extend %list;
 	display: flex;
 }
 .social-list .social-item {

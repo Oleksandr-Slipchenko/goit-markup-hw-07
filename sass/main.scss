@@ -1,5 +1,6 @@
 @import "./utils/variables";
 @import "./utils/placeholders";
+@import "./utils/mixins";
 @import "./base/base-values";
 @import "./base/visually-hidden";
 @import "./components/header";
@@ -11,6 +12,7 @@
 @import "./components/company-specialization";
 @import "./components/team-company";
 @import "./components/customers";
+@import "./components/footer";
 @import "./components/footer-address";
 @import "./components/footer-join-in";
 @import "./components/footer-subscribe";

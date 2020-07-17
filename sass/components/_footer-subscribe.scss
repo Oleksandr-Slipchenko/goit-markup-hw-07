@@ -3,7 +3,8 @@
 .subscribe {
 	width: calc((100% - 30px) / 2);
 
-	& .list {
+	&-list {
+		@extend %list;
 		display: flex;
 	}
 	&-title {

@@ -7,12 +7,17 @@
 
 	&-map {
 		display: flex;
+		margin-top: 20px;
+
 		color: $accent-color;
 		font-size: 14px;
 		line-height: 1.71;
 		font-style: normal;
 		flex-direction: column;
 	}
+}
+.address-map-list {
+	@extend %list;
 }
 
 .address-map .item {

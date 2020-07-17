@@ -10,7 +10,8 @@
 		line-height: 1.14;
 		text-transform: uppercase;
 	}
-	& .list {
+	&-list {
+		@extend %list;
 		margin-top: 20px;
 		display: flex;
 	}

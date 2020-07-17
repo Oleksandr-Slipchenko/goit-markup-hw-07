@@ -542,7 +542,7 @@ h3 {
 	text-transform: uppercase;
 }
 
-.join-in .list {
+.join-in .join-in-list {
 	margin-top: 20px;
 	display: flex;
 }
@@ -588,7 +588,7 @@ h3 {
 	text-transform: uppercase;
 	color: var(--accent-color);
 }
-.subscribe .list {
+.subscribe-list .list {
 	display: flex;
 }
 

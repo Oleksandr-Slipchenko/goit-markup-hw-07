@@ -1,6 +1,7 @@
 /* section with features of the company */
 
 .features {
+	@extend %list;
 	padding-top: 94px;
 	padding-bottom: 94px;
 	display: flex;

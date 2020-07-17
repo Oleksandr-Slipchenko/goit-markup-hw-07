@@ -1,7 +1,12 @@
 /* company specialization */
 .specialization {
+	@extend %list;
 	padding-bottom: 94px;
 	display: flex;
+
+	& img {
+		@extend %image;
+	}
 
 	&-title {
 		margin-bottom: 50px;

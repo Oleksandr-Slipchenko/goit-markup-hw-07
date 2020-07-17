@@ -1,0 +1,11 @@
+/* footer-tools */
+
+.footer {
+	background-color: #2f303a;
+
+	&-list {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+	}
+}
