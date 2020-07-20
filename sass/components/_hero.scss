@@ -15,10 +15,8 @@
 		margin-top: 0px;
 		margin-bottom: 30px;
 
-		font-weight: 900;
-		font-size: 44px;
-		line-height: 1.36;
-		letter-spacing: 0.06em;
+		@include font(900, 44px, 1.36, 0.06em);
+
 		text-transform: uppercase;
 	}
 	&-button {
@@ -27,11 +25,10 @@
 		display: inline-block;
 		color: $accent-color;
 		background-color: $text-color-hover;
-		font-weight: 700;
-		font-size: 16px;
-		line-height: 1.9;
+
+		@include font(700, 16px, 1.9, 0.06em);
+
 		align-items: center;
-		letter-spacing: 0.06em;
 		text-decoration: none;
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 		border-radius: 4px;

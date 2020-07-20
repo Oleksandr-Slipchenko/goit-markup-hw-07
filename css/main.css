@@ -14,11 +14,12 @@
 .logo {
   display: inline-block;
   color: #000000;
+  text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  text-decoration: none;
+  letter-spacing: 0.03em;
 }
 
 /* base-values */
@@ -215,10 +216,10 @@ h3 {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
+  letter-spacing: 0.06em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  letter-spacing: 0.06em;
   text-decoration: none;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -250,6 +251,7 @@ h3 {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -257,8 +259,10 @@ h3 {
   margin-top: 0px;
   margin-bottom: 0px;
   color: #757575;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .features-icon {
@@ -290,6 +294,7 @@ h3 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  letter-spacing: 0.03em;
   text-align: center;
 }
 
@@ -301,6 +306,7 @@ h3 {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   text-align: center;
   text-transform: uppercase;
   background-color: rgba(47, 48, 58, 0.8);
@@ -333,6 +339,7 @@ h3 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  letter-spacing: 0.03em;
   text-align: center;
 }
 
@@ -343,6 +350,7 @@ h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  letter-spacing: 0.03em;
   text-align: center;
 }
 
@@ -376,9 +384,10 @@ h3 {
 .section-profession {
   margin-top: 0px;
   margin-bottom: 16px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
-  color: #757575;
+  letter-spacing: 0.03em;
   text-align: center;
 }
 
@@ -439,6 +448,7 @@ h3 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  letter-spacing: 0.03em;
   text-align: center;
 }
 
@@ -507,9 +517,11 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
-  color: #ffffff;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
   font-style: normal;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -544,6 +556,7 @@ h3 {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -602,6 +615,7 @@ h3 {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -699,6 +713,7 @@ h3 {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
+  letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
 }
@@ -763,6 +778,7 @@ h3 {
   left: 42px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
@@ -776,8 +792,9 @@ h3 {
 .form-input:focus ~ .form-label,
 .form-input:not(:placeholder-shown) ~ .form-label {
   color: #2196f3;
-  -webkit-transform: translate(-26px, -33px);
-          transform: translate(-26px, -33px);
+  -webkit-transform: translate(-26px, calc(-100% - 4px));
+          transform: translate(-26px, calc(-100% - 4px));
+  top: 0;
   font-size: 12px;
   line-height: 1.16;
 }
@@ -792,7 +809,7 @@ h3 {
 .form-icon {
   position: absolute;
   top: 50%;
-  left: 19px;
+  left: 16px;
   width: 18px;
   height: 18px;
   -webkit-transform: translateY(-50%);
@@ -853,6 +870,7 @@ h3 {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
+  letter-spacing: 0.06em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

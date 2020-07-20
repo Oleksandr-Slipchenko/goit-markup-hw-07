@@ -13,9 +13,8 @@
 	& .title {
 		margin-bottom: 50px;
 
-		font-weight: 700;
-		font-size: 36px;
-		line-height: 1.16;
+		@include font(700, 36px, 1.16, 0.03em);
+
 		text-align: center;
 	}
 	& .person {
@@ -23,9 +22,8 @@
 		margin-top: 0px;
 		margin-bottom: 10px;
 
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 1.18;
+		@include font(500, 16px, 1.18, 0.03em);
+
 		text-align: center;
 	}
 }
@@ -61,9 +59,11 @@
 	margin-top: 0px;
 	margin-bottom: 16px;
 
-	font-size: 16px;
-	line-height: 1.18;
-	color: $additional-color;
+	@include font(400, 16px, 1.18, 0.03em);
+
+	// font-size: 16px;
+	// line-height: 1.18;
+	// color: $additional-color;
 	text-align: center;
 }
 

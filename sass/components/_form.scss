@@ -9,9 +9,9 @@
 		margin-bottom: 30px;
 
 		display: block;
-		font-weight: 700;
-		font-size: 20px;
-		line-height: 1.15;
+
+		@include font(700, 20px, 1.15, 0.03em);
+
 		text-align: center;
 		color: #212121;
 	}
@@ -63,16 +63,17 @@
 	top: 50%;
 	left: 42px;
 	transform: translateY(-50%);
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.01em;
+
+	@include font(400, 14px, 1.14, 0.01em);
+
 	color: $additional-color;
 	transition: transform 250ms $timing-transition;
 
 	.form-input:focus ~ &,
 	.form-input:not(:placeholder-shown) ~ & {
 		color: $text-color-hover;
-		transform: translate(-26px, -33px);
+		transform: translate(-26px, calc(-100% - 4px));
+		top: 0;
 		font-size: 12px;
 		line-height: 1.16;
 	}
@@ -87,7 +88,7 @@
 .form-icon {
 	position: absolute;
 	top: 50%;
-	left: 19px;
+	left: 16px;
 	width: 18px;
 	height: 18px;
 	transform: translateY(-50%);
@@ -139,9 +140,8 @@
 
 		display: flex;
 
-		font-weight: 700;
-		font-size: 16px;
-		line-height: 1.9;
+		@include font(700, 16px, 1.9, 0.06em);
+
 		align-items: center;
 		text-align: center;
 		letter-spacing: 0.06em;
