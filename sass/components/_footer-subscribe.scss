@@ -1,11 +1,11 @@
 /*footer-subscribe */
 
 .subscribe {
-	width: calc((100% - 30px) / 2);
+	// width: calc((100% - 30px) / 2);
 
 	&-list {
 		@extend %list;
-		display: flex;
+		// display: flex;
 	}
 	&-title {
 		margin-bottom: 20px;
@@ -34,6 +34,12 @@
 	border-radius: 4px;
 	color: rgba(255, 255, 255, 0.6);
 	transition: border-color 250ms $timing-transition;
+
+	@media screen and (max-width: $mobile-upper) {
+		margin-right: 0;
+		width: 100%;
+		margin-bottom: 20px;
+	}
 
 	.label-subscribe:focus-within & {
 		border-color: $text-color-hover;

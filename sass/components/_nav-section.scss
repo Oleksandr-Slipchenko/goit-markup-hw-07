@@ -5,6 +5,10 @@
 	align-items: center;
 
 	@include font(500, 14px, 1.14, 0.02em);
+
+	@media screen and (max-width: $mobile-upper) {
+		padding: 16px 15px;
+	}
 }
 
 .nav {
@@ -14,6 +18,9 @@
 
 	& .item + .item {
 		margin-left: 50px;
+	}
+	@media screen and (max-width: $mobile-upper) {
+		display: none;
 	}
 }
 

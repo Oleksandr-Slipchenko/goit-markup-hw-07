@@ -1,4 +1,9 @@
 /* company specialization */
+.section-specialization {
+	@media screen and (max-width: $mobile-upper) {
+		display: none;
+	}
+}
 .specialization {
 	@extend %list;
 	padding-bottom: 94px;

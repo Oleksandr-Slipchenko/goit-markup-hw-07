@@ -20,14 +20,10 @@ body {
 	color: $primary-text-color;
 	font-family: $main-font;
 	letter-spacing: $font-letter-spacing;
-}
-.container {
-	padding-left: 15px;
-	padding-right: 15px;
-	margin-left: auto;
-	margin-right: auto;
 
-	width: 1200px;
+	@media screen and (max-width: $mobile-upper) {
+		padding-top: 60px;
+	}
 }
 
 h1,

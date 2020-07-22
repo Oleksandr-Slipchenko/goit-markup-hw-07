@@ -3,7 +3,12 @@
 .address {
 	padding-top: 60px;
 	padding-bottom: 60px;
-	width: calc((100% - 60px) / 4);
+	// width: calc((100% - 60px) / 4);
+
+	@media screen and (max-width: $mobile-upper) {
+		padding-top: 0px;
+		padding-bottom: 60px;
+	}
 
 	&-map {
 		display: flex;
@@ -22,6 +27,10 @@
 
 .address-map .item {
 	margin-bottom: 9px;
+
+	@media screen and (max-width: $mobile-upper) {
+		margin-bottom: 8px;
+	}
 
 	&:last-child {
 		margin-bottom: 0;

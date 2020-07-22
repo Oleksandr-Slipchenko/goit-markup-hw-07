@@ -1,7 +1,11 @@
 /*footer-join-in */
 
 .join-in {
-	width: calc((100% - 60px) / 4);
+	// width: calc((100% - 60px) / 4);
+
+	@media screen and (max-width: $mobile-upper) {
+		margin-bottom: 60px;
+	}
 
 	& .title {
 		color: $accent-color;
@@ -14,6 +18,10 @@
 		@extend %list;
 		margin-top: 20px;
 		display: flex;
+
+		@media screen and (max-width: $mobile-upper) {
+			justify-content: center;
+		}
 	}
 }
 

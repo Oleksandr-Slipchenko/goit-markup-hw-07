@@ -2,7 +2,7 @@
 
 .contacts {
 	@extend %list;
-	display: flex;
+	// display: flex;
 	margin-left: auto;
 
 	& .item + .item {
@@ -11,6 +11,12 @@
 	&-icon {
 		margin-right: 10px;
 		fill: currentColor;
+	}
+	@media screen and (max-width: $mobile-upper) {
+		display: none;
+	}
+	@media screen and (min-width: $desktop-upper) {
+		display: flex;
 	}
 }
 
